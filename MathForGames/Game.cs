@@ -38,7 +38,7 @@ namespace MathForGames
             _scene = new Scene();
             Actor actor = new Actor(0,0,'■',ConsoleColor.Green);
             actor.Velocity.X = 1;
-            Player player = new Player(0, 1, '@', ConsoleColor.Red);
+            Player player = new Player(0, 1, '@', ConsoleColor.Magenta);
             _scene.AddActor(player);
             _scene.AddActor(actor);
             
@@ -79,7 +79,7 @@ namespace MathForGames
                 Draw();
                 while (Console.KeyAvailable)
                     Console.ReadKey(true);
-                Thread.Sleep(150);
+                Thread.Sleep(135);
             }
 
             End();
